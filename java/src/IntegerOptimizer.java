@@ -47,7 +47,7 @@ public class IntegerOptimizer {
         temp = "1";
       }
     }
-    reverseArray(encodedArray); //Big-Endian Notation
+    reverseArray(encodedArray); //Little-Endian Notation
     //The values after optimization [133, 2]
   }
 
@@ -66,7 +66,7 @@ public class IntegerOptimizer {
   }
 
   public void decodeOptimizedInteger(){
-    reverseArray(encodedArray); //Converting back from Big-Endian Notation
+    reverseArray(encodedArray); //Converting back from Little-Endian Notation
     //The array now is [2, 133]
     String decodedString = "";
     for(int i = 0; i < encodedArray.length; i++){
